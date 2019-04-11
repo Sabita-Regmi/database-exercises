@@ -7,7 +7,7 @@ select * from employees where first_name in ('Irena','Vidya','Maya') ;
 --
 -- Find all employees whose last name starts with 'E' — 7,330 rows
 
-select * from employees where last_name like 'E%';
+select * from employees where last_name like 'E%' ;
 
 
 -- Find all employees hired in the 90s — 135,214 rows.
