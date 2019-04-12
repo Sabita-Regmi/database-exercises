@@ -27,3 +27,10 @@ SELECT  CONCAT(first_name,' ',last_name) FROM employees where  first_name like '
 -- For your query of employees born on Christmas and hired in the 90s, use datediff() to find how many
 -- days they have been working at the company (Hint: You will also need to use now() or curdate())
 select *,DATEDIFF(curdate(),hire_date) from employees where hire_date LIKE '199%' and birth_date like '%12-25';
+
+describe departments;
+describe dept_emp;
+describe dept_manager;
+describe employees;
+describe salaries;
+describe titles;
