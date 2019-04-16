@@ -1,3 +1,4 @@
+ USE adlister_db;
 
 CREATE TABLE IF NOT EXISTS users(
   id INT UNSIGNED NOT NULL AUTO_INCREMENT,
@@ -38,9 +39,32 @@ CREATE TABLE IF NOT EXISTS ad categories(
   PRIMARY KEY(id)
 );
 
-3)select * from ads
+
+
+4)select * from ads
 where id in (
-  select ad_id from ads_categories
-  where cat_id = 2
+  select id from users
+  where name = ''
   );
 
+users:
+user_id int
+user_name varchar ,
+password varchar,
+email varchar
+INSERT INTO users(name, password, email) VALUES
+  ('sabita',   'password','sabitaregmi.com'),
+  ('luis',  'password1','abc.com'),
+  ('erik',  'password2','xyz.com');
+
+
+INSERT INTO categories(name)
+VALUES
+
+  ('TOOLS'),
+  ('JEWELRY'),
+  ('ELECTRONICS'),
+  ('ANTIQUES'),
+  ('HANDICRAFTS'),
+  ('DIY'),
+  ('APPLIANCES');
